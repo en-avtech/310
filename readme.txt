@@ -33,4 +33,16 @@ First nail down layout (stuff to do for product backlog), then work on it in 2-d
 >Bryce will do the graphs
 >E will do preliminary docs
 >Yasha will do starting interfaces
->And B will do 
+>And B will do hour log and also some docs 
+
+E:
+Project description
+SDLC
+
+B:
+Tasks
+Hours (essentially, the WBS)
+Meeting logs, etc.
+Gantt chart
+
+
