@@ -1,0 +1,19 @@
+Phase 1: Planning
+-Concept choice
+-Functional analysis/design discussino
+-Setup documentation
+
+Phase 2: System Design
+-Interface creation
+  -Conversation state node
+  -Input analysis
+  -Response selection
+  
+Phase 3: Implementation
+  -Implement interfaces  
+  -Fill and assemble response state buckets
+  
+Phase 4: Testing
+  -Play with chatterbot
+    -Go through test cases (inc. nonsense in various places, timeout)
+  -Fix bugs if needed
