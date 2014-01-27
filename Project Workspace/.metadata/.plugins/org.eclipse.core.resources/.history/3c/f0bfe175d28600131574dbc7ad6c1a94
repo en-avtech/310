@@ -1,0 +1,46 @@
+/**
+ * This is the main driver class that controls the batterbot.
+ * 
+ * @author Yasha
+ *
+ */
+public class BatterBotDriver 
+{
+	private IOInterface IO = null;
+	private LanguageProcessorInterface LP = null;
+	private ResponseSelectorInterface RS = null;
+	private ResponseBuilderInterface RB = null;
+	
+	public void cycle()
+	{
+		String input;
+		
+		while(true)
+		{
+			input = IO.read(); //This is expected to block waiting for input
+			
+			//TODO there should be some kind of way of exiting this loop. I haven't built enough to be able to put that here yet though.
+			
+			//Print the next response
+			IO.print(getResponse(input));
+			
+			
+		}
+	}
+	
+	public String getResponse(String input)
+	{
+		
+		//Decode the user input into keywords
+		KeyWordListInterface keys = LP.extractKeyWords(input);
+		
+		//Select the next response template
+		ResponseTemplateInterface template = RS.selectTemplate(keys);
+		
+		//Build the response from template
+		String response = RB.buildResponse(template, keys);
+		
+		return response;
+		
+	}
+}

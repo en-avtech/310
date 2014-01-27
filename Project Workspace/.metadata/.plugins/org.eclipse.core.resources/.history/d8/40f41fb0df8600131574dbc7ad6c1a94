@@ -1,0 +1,26 @@
+/**
+ * The interface for controlling the response graph.
+ * 
+ * @author Yasha
+ *
+ */
+public interface ResponseGraph 
+{
+	/**
+	 * Determines the possible valid response templates based on the 
+	 * current position in the response graph.
+	 * @return an array of responseTemplates
+	 */
+	public ResponseTemplateInterface[] getResponses();
+	
+	/**
+	 * This method updates the current location of the
+	 * response graph based on the ID of the response 
+	 * selected by the ResponseSelctor.
+	 * 
+	 * @param the ID of the responseTemplate selected
+	 * @return boolean 1 on success, 0 on failure.
+	 */
+	public boolean updatePosition(int responseID);
+		
+}

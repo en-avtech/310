@@ -1,0 +1,28 @@
+/**
+ * Implements the Response Template Interface
+ * @author Yasha
+ *
+ */
+public class ResponseTemplate implements ResponseTemplateInterface
+{
+
+	public boolean isValediction() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	public String toString()
+	{
+		String str = "";
+
+		for(int i = 0; i < response.length; i++)
+		{
+			str+= response[i];
+			if (i < response.length - 1)
+				str+= "_________";
+		}
+
+		return str;
+	}
+}

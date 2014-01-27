@@ -1,0 +1,43 @@
+/**
+ * This is the main driver class that controls the batterbot.
+ * 
+ * @author Yasha
+ *
+ */
+public class BatterBotDriver 
+{
+	private IOInterface IO = null;
+	private LanguageProcessorInterface LP = null;
+	private ResponseSelectorInterface RS = null;
+	
+	public void cycle()
+	{
+		String UserInput;
+		
+		while(true)
+		{
+			UserInput = IO.read(); //This is expected to block waiting for input
+			
+			
+		}
+	}
+	
+	public void fetchDecodePrint()
+	{
+		//Get the next user input
+		String UserInput = IO.read();
+		
+		//Decode the user input into keywords
+		KeyWordListInterface keys = LP.extractKeyWords(UserInput);
+		
+		//Select the next response template
+		
+		
+		//Build the response from template
+		String response = null;
+		
+		//print the response
+		IO.print(response);
+		
+	}
+}

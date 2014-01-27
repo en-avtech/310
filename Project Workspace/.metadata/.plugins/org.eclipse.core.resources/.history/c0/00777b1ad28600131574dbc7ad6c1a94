@@ -1,0 +1,9 @@
+/**
+ * 
+ * @author Yasha
+ *
+ */
+public interface ResponseTemplateInterface 
+{
+	
+}

@@ -1,0 +1,11 @@
+/**
+ * 
+ * This class contains all 
+ * 
+ * @author Yasha
+ *
+ */
+public class Word 
+{
+	public String word;
+}

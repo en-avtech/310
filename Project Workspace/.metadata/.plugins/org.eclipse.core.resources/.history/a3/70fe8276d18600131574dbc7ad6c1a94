@@ -1,0 +1,8 @@
+/**
+ * Builds the response.
+ * @author Yasha
+ *
+ */
+public interface ResponseBuilderInterface {
+
+}

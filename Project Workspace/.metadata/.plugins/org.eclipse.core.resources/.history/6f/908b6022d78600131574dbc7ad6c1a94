@@ -1,0 +1,14 @@
+/**
+ * 
+ * @author Yasha
+ *
+ */
+public interface ResponseTemplateInterface 
+{
+	/**
+	 * Method to check if the conversation is coming to a close.
+	 * 
+	 * @return true if response is to end conversation, false otherwise
+	 */
+	public boolean isValediction();
+}

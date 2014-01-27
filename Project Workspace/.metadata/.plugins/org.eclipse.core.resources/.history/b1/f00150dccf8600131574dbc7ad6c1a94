@@ -1,0 +1,17 @@
+/**
+ * This interface is designed to handle the interactions between the 
+ * IO device and the Response Selector. 
+ * 
+ * @author Yasha
+ *
+ */
+public interface LanguageProcessorInterface 
+{
+
+	
+	public KeyWordListInterface extractKeyWords(String input);
+	
+	
+	
+	
+}

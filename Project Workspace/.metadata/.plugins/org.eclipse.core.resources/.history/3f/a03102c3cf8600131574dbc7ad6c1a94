@@ -1,0 +1,20 @@
+/**
+ * This interface is designed to handle the interactions between the 
+ * IO device and the Response Selector. 
+ * 
+ * @author Yasha
+ *
+ */
+public interface LanguageProcessorInterface 
+{
+	/**
+	 * A reference to the IO device being used to interact with the batterbot
+	 */
+	public IOInterface IO = null;
+	
+	public KeyWordListInterface extractKeyWords(String input);
+	
+	
+	
+	
+}

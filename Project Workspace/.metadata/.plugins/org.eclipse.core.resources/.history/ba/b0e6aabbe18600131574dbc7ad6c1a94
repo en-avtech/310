@@ -1,0 +1,35 @@
+/**
+ * The response graph class.
+ * 
+ * @author Yasha
+ *
+ */
+public class ResponseGraph implements ResponseGraphInterface
+{
+	private class node
+	{
+		private ResponseTemplate RT;
+		private node[] edges;
+	}
+	
+	public ResponseGraph()
+	{
+		
+	}
+	
+
+	@Override
+	public ResponseTemplateInterface[] getResponses()
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean updatePosition(int responseID) 
+	{
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+}

@@ -1,0 +1,41 @@
+/**
+ * This is an interface 
+ * 
+ * @author Yasha
+ *
+ */
+public interface ResponseTemplateInterface extends WordBuckets
+{
+	/**
+	 * Method to check if the conversation is coming to a close.
+	 * 
+	 * @return true if response is to end conversation, false otherwise
+	 */
+	public boolean isValediction();
+	
+	/**
+	 * This is an array of strings that form the parts of the response delimited
+	 * by words that need to be filled in. For example suppose the response
+	 * template was: "Are you feeling _______? I am feeling __________." then the response would be stored as:
+	 * response = {"Are you feeling ", "? I am feeling ", "."};
+	 */
+	public String[] response = null;
+	
+	
+	/**
+	 * This is an array of wordbuckets. These correspond to the blanks that are
+	 * left in the response string. For example, if the response string is stored
+	 * as: response = {"Are you feeling ", "? I am feeling ", "."}; then the corresponding word bucket
+	 * might be filled with: 
+	 * 
+	 * blanks = {{"happy", "sad", "lonely", "angry", "amused", "bored"},
+	 * 			 {"happy", "sad", "lonely", "angry", "amused", "bored"}};
+	 * 
+	 * Where the first 
+	 */
+	public WordBucket[] blanks = null
+	
+	public String toString();
+	
+	
+}

@@ -1,0 +1,10 @@
+/**
+ * This interface controls the interactions between the language processor,
+ * the response state graph, and the response builder.
+ * @author Yasha
+ *
+ */
+public interface ResponseSelectorInterface
+{
+	public ResponseTemplateInterface selectTemplate(KeyWordListInterface keys);
+}

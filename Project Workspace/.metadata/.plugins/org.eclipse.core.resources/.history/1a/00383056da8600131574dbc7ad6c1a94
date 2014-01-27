@@ -1,0 +1,17 @@
+/**
+ * 
+ * The Word class is an abstract class from which the different types of words can be
+ * inherited. 
+ * 
+ * @author Yasha
+ *
+ */
+public abstract class Word 
+{
+	public String word;
+	
+	public String toString()
+	{
+		return word;
+	}
+}

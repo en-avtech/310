@@ -1,0 +1,9 @@
+/**
+ * Implements the Response Template Interface
+ * @author Yasha
+ *
+ */
+public class ResponseTemplate implements ResponseTemplateInterface
+{
+
+}
