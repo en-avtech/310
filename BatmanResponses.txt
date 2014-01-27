@@ -1,0 +1,32 @@
+BATMAN RESPONSES
+
+**Each response is a assigned a  number value. The first value is the branch of the conversation it is in.
+**The second number describes the distance from the starting node
+**The third number describes the number of the node in that layer
+**EX: 2.34 - is in the second branch, depth of 3, and the fourth option in that layer
+
+0.0 Hi this is Batman, what is the emergency?
+
+1.0(Robbery) What's being robbed? 
+	1.11(Bank)Which bank is being robbed?
+		1.21 Who is robbing the bank?
+			1.31 How many henchmen does he have? How many skulls do I have to knock around?
+				1.41 is that all? that's not a problem...
+				1.42 that's quite a few, I may need to bring Robin along...
+			1.32 Well if you don't know what he is can you describe him or his henchmen?
+				1.43(clowns) ah the Joker, my old nemesis
+				1.44(penguins) ah the Penguin, my old nemesis
+				1.45(question marks) ah the Riddler, my old nemesis
+	1.12(Museum)Which museum is being robbed?
+		1.22 Ah, the Hope Diamond is on display there this week. Who is robbing the museum?
+			*skip to 1.21
+	1.13(Other)
+		1.23 I don't know if that's a job for me. Why can't Commissioner Gordon's police handle this?
+		
+	
+2.0(Hostage) Who's being held hostage?
+	2.11 Do you know who's holding them?
+		2.21 Do you know what they want?
+		
+
+3.0(Attack) Who's being attacked? 
